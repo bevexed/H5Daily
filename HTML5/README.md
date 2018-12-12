@@ -39,38 +39,73 @@
   - 新增其他元素
     - video
     - audio
-    - embed
-    - mark
-    - progress
-    - meter
-    - time
-    - ruby
-    - rt
-    - rp
-    - wbr
-    - canvas
-    - command
-    - details
-    - datalist
-    - datagrid
-    - keygen
-    - output
-    - span
     - source
+      - 为媒介元素（比如<video>和<audio>）定义媒介资源
+    - embed
+      - 插入各种多媒体
+      - 格式可以是 Midi、Wav、AIFF、AU、MP3等
+    - mark
+      - 主要用来在视觉上向用户呈现那些需要突出显示或者高亮显示的文字
+      - 典型的应用就是在搜索结果里向用户高亮显示搜索关键词
+    - progress
+      - 表示运行中的进程
+      - 可以使用 progress 元素来显示 JavaScript 中消耗时间的函数的进程
+    - meter
+      - 表示度量衡
+      - 仅用于已知最大值和最小值得度量
+      - 必须定义度量的范围，即可以在元素文本中，也可以在 mix/max 属性中定义
+    - time
+      - 用于表示日期或时间，也可以同时表示两者
+    - ruby
+      - 表示 ruby 注释 （中文字符或字符）
+    - rt
+      - 表示字符（中文注音或字符）的解释或发音
+    - rp
+      - 在 ruby 注释中使用，以定义不知处 ruby 元素的浏览器所显示的内容
+    - wbr
+      - 表示软换行
+      - 当浏览器窗口或父级元素的宽度足够时，不进行换行；反之，则换行
+    - canvas
+      - 表示一块画布
+    - command
+      - 表示命令按钮，比如单选按钮、复选框或按钮
+    - details
+      - 表示用户要求得到并且可以得到的细节信息
+      - 可以和 summary 元素配合使用 (提供标题或图例)
+        - summary元素 应该是 details元素 的第一个子元素
+        - 标题是可见的，当用户点击标题时，会显示细节信息
+    - datalist
+      - 表示可选数据列表
+      - 与 input元素 配合使用，可以制作输入值的下拉列表
+    - datagrid
+      - 表示可选数据的列表
+      - 以树状列表的形式显示
+    - keygen
+      - 表示生成密钥
+    - output
+      - 表示不同类型的输出，比如脚本的输出
     - menu
+      - 表示菜单列表
+      - 当希望列出表单空间时使用改标签
     - dialog
+      - 表示对话框
   - 新增 input 元素的类型
     - email
+      - 必须输入 email 地址的文本输入框
     - url
+     - 必须输入 url 地址的文本输入框
     - number
+      - 必须输入 number 地址的文本输入框
     - range
+      - 必须输入一定范围内数字值的文本输入框
     - Date Picker
-      1. date
-      2. month
-      3. week
-      4. time
-      5. datetime
-      6. datetime-local
+      - 可提供选取日期和时间的新型输入文本框
+      1. date：选取日、月、年
+      2. month：选取月、年
+      3. week：选取周、年
+      4. time：选取时间（小时和分钟）
+      5. datetime：选取时间、日、月、年（UTC时间）
+      6. datetime-local：选取时间、日、月、年（本地时间）
 
 ### 新增属性
   - 表单相关的属性

@@ -93,7 +93,7 @@
     - email
       - 必须输入 email 地址的文本输入框
     - url
-     - 必须输入 url 地址的文本输入框
+      - 必须输入 url 地址的文本输入框
     - number
       - 必须输入 number 地址的文本输入框
     - range
@@ -110,9 +110,17 @@
 ### 新增属性
   - 表单相关的属性
     - autofocus
+      - 可以对 input（type=text）、select、textarea 和 button 元素指定 autofocus
+      - 被指定的元素再画面戴氏自动获取焦点
     - placeholder
+      - 可以对 input（type=text）、textarea 元素指定 placeholder 属性
     - form
+      - 可以对input、output、select、textarea、button与 fieldset 指定 form 属性
+      - 声明被指定的元素属于哪个表单
+      - 被指定的元素可以放置在页面上的任何位置
     - required
+      - 可以对 input（type=text）、textarea 元素指定 required 属性
+      - 在用户提交时进行检测，检测被指定的元素内一定要要输入内容
     - autocomplete
     - min
     - max
@@ -131,34 +139,48 @@
     - target
   - 其他属性
     - reversed
+      - 指定列表（ol）倒序显示
     - start
+      - 指定列表（ol）的开始编号
     - type
     - label
     - scoped
+      - 用来规定 style元素 的作用范围
     - async
+      - 用来规定 script 脚本是否执行异步
     - manifest
+      - 为 html 元素应用
     - sandbox
     - seamless
     - srcdoc
 
 ### 全局属性
   - contentEditable
+    - 允许用户编辑元素中的内容
   - designMode
+    - 用来指定整个页面是否可编辑
   - hidden
   - spellcheck
+    - 对用户输入的内容进行语法检测
   - tabindex
+    - 规定 Tab 键遍历控件时获取焦点的顺序
 ### 新增事件
-  - beforeprint
-  - afterprint
-  - resize
-  - error
-  - offline
-  - online
-  - pageshow
-  - beforeunload
-  - hashchange
-  - mousewheel
-  - scroll
-  - input
-  - reset
+  - window对象 body元素
+    - beforeprint
+    - afterprint
+    - resize
+    - error
+    - offline
+    - online
+    - pageshow
+    - beforeunload
+    - hashchange
+  - 任何元素
+    - mousewheel
+  - 任何容器元素
+    - scroll
+  - input、textarea元素
+    - input
+  - form元素
+    - reset
 

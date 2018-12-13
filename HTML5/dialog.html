@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<dialog open>
+  open
+</dialog>
+
+
+<button id="show">show</button>
+<button id="close">close</button>
+<dialog id="show_d">
+  to be show
+</dialog>
+
+<button id="showModal">showModal</button>
+<button id="closeModel">close</button>
+<dialog id="showModal_d" returnValue="19">
+  to be showModal
+</dialog>
+<script>
+  let close = document.querySelector('#close')
+  let show = document.querySelector('#show')
+  let show_d=document.querySelector('#show_d')
+  show.onclick = () => {
+    show_d.show()
+  }
+  close.onclick = () => {
+    show_d.close()
+  }
+
+  let closeModel = document.querySelector('#closeModel')
+  let showModal = document.querySelector('#showModal')
+  let showModal_d=document.querySelector('#showModal_d')
+  showModal.onclick = () => {
+    showModal_d.show()
+  }
+  closeModel.onclick = () => {
+    showModal_d.close()
+  }
+</script>
+</body>
+</html>

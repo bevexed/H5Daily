@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>input</title>
+</head>
+<body>
+<form action="" oninput="out.value=range.value">
+  <label>
+    lists:
+    <input type="text" list="list" pattern="[0-9]{1}" required> <br>
+
+    <datalist id="list">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </datalist>
+  </label>
+
+  <label>search:<input type="search"> </label> <br>
+
+  <label>date:<input type="date"> </label> <br>
+  <label>month:<input type="month"> </label> <br>
+  <label>week:<input type="week"> </label> <br>
+  <label>time:<input type="time"> </label> <br>
+  <label>datetime-local:<input type="datetime-local"> </label> <br>
+
+  <label>number:<input type="number"> </label> <br>
+
+  <label>url:<input type="url"> </label> <br>
+
+  <label>color:<input type="color"> </label> <br>
+
+  <label>range:<input type="range" max="99" id="range" min="1" name="range"  > </label> <output name="out" for="range"></output> <br>
+
+  <fieldset>
+    <legend>健康信息</legend>
+    身高：<input type="text"/>
+    体重：<input type="text"/>
+  </fieldset>
+
+
+
+  <input type="submit" value="submit">
+</form>
+
+<form action="" id="myform" oninput="num.value=parseInt(num1.value)+parseInt(num2.value)">
+  <input type="range" id="num1">+
+  <input type="number" id="num2" value="100">=
+  <output name="num" for="num1 num2"></output>
+</form>
+
+
+</body>
+</html>

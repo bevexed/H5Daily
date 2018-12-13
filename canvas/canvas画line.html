@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+</body>
+<script>
+  const canvas = document.querySelector('#canvas')
+  canvas.height = 600
+  canvas.width = 600
+  const ctx = canvas.getContext('2d')
+  ctx.beginPath()
+  ctx.moveTo(10, 10)
+  ctx.lineTo(10, 20)
+  ctx.lineTo(20, 20)
+  ctx.closePath()
+  ctx.stroke()
+
+  function draw(id) {
+    let canvas = document.getElementById(id)
+    if (canvas === null)
+      return false;
+    let ctx = canvas.getContext('2d')
+    ctx.fillStyle = 'red'
+    ctx.fillRect(20, 20, 400, 300)
+    let n = 0
+    let dx = 150
+    let dy = 150
+    let s = 100
+    ctx.beginPath()
+    ctx.fillStyle = 'green'
+    ctx.strokeStyle = 'blue'
+    let x = Math.sin(0)
+    let y = Math.cos(0)
+    let dig = Math.PI / 15 * 11
+    for (let i = 0; i < 30; i++) {
+      let x = Math.sin(i * dig)
+      let y = Math.cos(i * dig)
+      ctx.lineTo(dx + x * s, dy + y * s)
+    }
+    ctx.closePath()
+    ctx.fill()
+    ctx.stroke()
+  }
+
+  draw('canvas')
+</script>
+</html>

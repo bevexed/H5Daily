@@ -19,11 +19,23 @@
       - strokeStyle
     7. 绘制图形
     ```html
-    const canvas = document.querySelector('#canvas')
-    let ctx = canvas.getContext('2d')
-    ctx.fillStyle = "red"
-    ctx.strokeStyle = "blue"
-    ctx.strokeRect(0,0,100,100)
-    ctx.fillRect(100,100,200,200)
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+    <canvas id="canvas"></canvas>
+    </body>
+    <script>
+      const canvas = document.querySelector('#canvas')
+      let ctx = canvas.getContext('2d')
+      ctx.fillStyle = "red"
+      ctx.strokeStyle = "blue"
+      ctx.strokeRect(0,0,100,100)
+      ctx.fillRect(100,100,200,200)
+    </script>
+    </html>
     ```
 - 绘制矩形

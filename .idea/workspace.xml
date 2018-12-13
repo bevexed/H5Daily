@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d285846-2fab-4ea6-9a94-91bb4747a319" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML5/detail&amp;summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/figure和figcaption.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/input的type属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/meter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML5/progress.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/11月1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML5/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/detail&amp;summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/detail&amp;summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/dialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/figure和figcaption.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/figure和figcaption.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/input的type属性.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/input的type属性.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/meter.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/meter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML5/progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/progress.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,13 +21,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML5/README.md">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="474">
-                <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
+              <first_editor relative-caret-position="48">
+                <caret line="163" column="62" selection-start-line="163" selection-start-column="62" selection-end-line="163" selection-end-column="62" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -37,26 +36,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTML5/dialog.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/dialog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="299">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML5/input的type属性.html">
+        <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/input的type属性.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
+            <state relative-caret-position="161">
               <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML5/figure和figcaption.html">
+        <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/figure和figcaption.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
               <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
@@ -65,16 +64,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML5/detail&amp;summary.html">
+        <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/detail&amp;summary.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML5/progress.html">
+        <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/progress.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
               <caret line="7" column="30" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="30" />
@@ -83,7 +82,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML5/meter.html">
+        <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/meter.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
               <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
@@ -101,6 +100,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>async</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -117,8 +121,9 @@
         <option value="$PROJECT_DIR$/HTML5/detail&amp;summary.html" />
         <option value="$PROJECT_DIR$/HTML5/progress.html" />
         <option value="$PROJECT_DIR$/HTML5/meter.html" />
-        <option value="$PROJECT_DIR$/HTML5/README.md" />
         <option value="$PROJECT_DIR$/HTML5/dialog.html" />
+        <option value="$PROJECT_DIR$/HTML5/README.md" />
+        <option value="$PROJECT_DIR$/HTML5 新增 元素 与 属性/README.md" />
       </list>
     </option>
   </component>
@@ -132,7 +137,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,17 +147,19 @@
             <path>
               <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
               <item name="h5_daily" type="462c0819:PsiDirectoryNode" />
-              <item name="HTML5" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML5 新增 元素 与 属性" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jiyuanime.ui.Setting" />
@@ -188,6 +194,8 @@
       <option name="presentableId" value="Default" />
       <updated>1544582886233</updated>
       <workItem from="1544582887783" duration="3763000" />
+      <workItem from="1544668436586" duration="734000" />
+      <workItem from="1544669207531" duration="85000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1544583021657</created>
@@ -217,11 +225,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544599378783</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dialog 弹框">
+      <created>1544664455110</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544664455110</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17132000" />
+    <option name="totallyTimeSpent" value="20644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -259,7 +274,8 @@
     <MESSAGE value="大纲" />
     <MESSAGE value="input新增属性" />
     <MESSAGE value="新增事件" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增事件" />
+    <MESSAGE value="dialog 弹框" />
+    <option name="LAST_COMMIT_MESSAGE" value="dialog 弹框" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.postcssrc.js" />
@@ -289,11 +305,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5结构/README.md">
+    <entry file="file://$PROJECT_DIR$/HTML5结构/README.md" />
+    <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="161">
-            <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <first_editor relative-caret-position="48">
+            <caret line="163" column="62" selection-start-line="163" selection-start-column="62" selection-end-line="163" selection-end-column="62" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -301,57 +318,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/figure和figcaption.html">
+    <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/input的type属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/figure和figcaption.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/meter.html">
+    <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/detail&amp;summary.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="184">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/progress.html">
+    <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/progress.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="30" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/detail&amp;summary.html">
+    <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/meter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/input的type属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="474">
-            <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="161">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>

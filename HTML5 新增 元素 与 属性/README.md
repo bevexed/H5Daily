@@ -158,9 +158,35 @@
       - 用来规定 style元素 的作用范围
     - async
       - 用来规定 script 脚本是否执行异步
+      - 指定该属性后，JavaScript 脚本加载完毕后立即执行
+    - defer
+      - 用来规定 script 脚本是否执行异步
+      - 指定该属性后，JavaScript 脚本加载完毕后不会立即执行，而是等页面全部加载完毕后，才执行该脚本中文件
     - manifest
       - 为 html 元素应用
     - sandbox
+      - 为 iframe 元素增强安全性，当 sandbox 属性被添加时
+        - 该页面中的插件被禁用
+        - 该页面中的的表单被禁止提交
+        - 该页面中的 JavaScript 被禁止运行
+        - 该页面中的 超链接（将页面导航到新的内容）被禁用
+        - 该页面将被视为一个单独的源
+          - 禁止加载该页面中来自服务器端的内容
+          - 禁止该页面与服务器进行交互
+          - 禁止加载该页面从 cookie 或 webStorage 中读出的内容
+      - sandbox 可以指定多个属性值（属性值和属性值之间用分号隔开）
+        - allow-forms
+          - 允许 iframe 页面中的表单进行提交
+        - allow-script
+          - 允许执行 iframe 页面中的 JavaScript 脚本代码
+        - allow-same-origin
+          - 将 iframe 中的页面视为与使用该 iframe 元素的页面视为来自同一个源
+            - 允许加载该页面中来自服务器端的内容
+            - 允许该页面与服务器进行交互
+            - 允许加载该页面从 cookie 或 webStorage 中读出的内容
+              - 在大多数情况下需要和 allow-script 同用
+        - allow-top-navigation
+          - 允许 超链接 跳转页面
     - seamless
     - srcdoc
 

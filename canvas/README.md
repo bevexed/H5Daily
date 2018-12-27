@@ -73,11 +73,11 @@
     - ellipse(x, y, radiusX, radiusY, rotation, startAngle, ,endAngle. anticlockwise)
       - rotation 顺时针的旋转角度
   - 注意事项
-    1. 此方法需要 beginPath() 来开始新的路径
-    2. 此方法需要 closePath()
+    - 此方法需要 beginPath() 来开始新的路径
+    - 此方法需要 closePath()
       - 如果不关闭路径 会造成路径的 重绘 ，可以利用这个特性绘制特殊的图形
-    3. 此方法只是绘制了 圆的路径，因此需要通过 fill() 或 stroke() 方法来 填充 或 描边 路径
-   ```html
+    - 此方法只是绘制了 圆的路径，因此需要通过 fill() 或 stroke() 方法来 填充 或 描边 路径
+  ```html
       <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -95,7 +95,7 @@
         ctx.stroke()
       </script>
       </html>
-      ```
+  ```
 ### 绘制直线
   - moveTo(x, y)
   - lineTo(x, y)

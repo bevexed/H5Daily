@@ -1,4 +1,4 @@
-## canvas
+## Canvas
 ### 基础
   - canvas
     - 属性
@@ -70,7 +70,53 @@
       - 如果path没有闭合，则fill()会自动闭合路径。
 
 
-
-- 绘制圆形
+- 绘制圆形(椭圆)
+  - 通过 路径（path）绘制
+    - arc(x, y, radius, startAngle, endAngle, anticlockwise)
+    - ellipse(x, y, radiusX, radiusY, rotation, startAngle, ,endAngle. anticlockwise)
+      - rotation 顺时针的旋转角度
+  - 注意事项
+    1. 此方法需要 beginPath() 来开始新的路径
+    2. 此方法需要 closePath()
+      - 如果不关闭路径 会造成路径的 重绘 ，可以利用这个特性绘制特殊的图形
+    3. 此方法只是绘制了 圆的路径，因此需要通过 fill() 或 stroke() 方法来 填充 或 描边 路径
+     ```html
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+        </head>
+        <body>
+        <canvas id="canvas"></canvas>
+        </body>
+        <script>
+          const canvas = document.querySelector('#canvas')
+          let ctx = canvas.getContext('2d')
+          ctx.beginPath()
+          ctx.arc(Random(), Random(), Random()/10, 0, Math.PI * 2)
+          ctx.stroke()
+        </script>
+        </html>
+        ```
+- 绘制线
+  - moveTo(x, y)
+  - lineTo(x, y)
+  - closePath()
+    - 会与第一个坐标点自动闭合
+  - lineCap
+    - 为直线添加 线帽
+      - butt : 默认属性值，不添加线帽
+      - round ： 圆型 线帽
+      - square ：正方形 的线帽
+  - lineJoin
+    - 定义 两条直线交汇时的 拐角 的形状
+    - miter : 默认属性，尖角拐角
+    - round : 圆角拐角
+    - bevel ：斜角拐角
+  - setLineDash([x, y])
+    - 定义 虚线形状
+    - x ：定义虚线的每段线段长度
+    - y ：定义线段与线段之间的间距
 
 

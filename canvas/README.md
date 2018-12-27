@@ -38,34 +38,34 @@
   </script>
   </html>
   ```
-  - 绘制矩形
-    - 绘制一个填充的矩形
-      - fillRect(x, y, width, height)
-    - 绘制一个矩形的边框
-      - strokeRect(x, y, width, height)
-    - 清除指定的矩形区域，然后这块区域会变的完全透明
-      - clearRect(x, y, width, height)
+### 绘制矩形
+  - 绘制一个填充的矩形
+    - fillRect(x, y, width, height)
+  - 绘制一个矩形的边框
+    - strokeRect(x, y, width, height)
+  - 清除指定的矩形区域，然后这块区域会变的完全透明
+    - clearRect(x, y, width, height)
 
-  - 绘制路径
-    - 绘制路径的步骤
-      - 创建路径起始点
-      - 调用绘制方法去绘制出路径
-      - 把路径封闭
-      - 一旦路径生成，通过描边或填充路径区域来渲染图形
-    - 绘制路径用到的方法
-      - beginPath()
-        - 新建一条路径，路径一旦创建成功，图形绘制命令被指向到路径上生成路径
-      - moveTo(x, y)
-        - 把画笔移动到指定的坐标(x, y)。相当于设置路径的起始点坐标
-      - lineTo(x, y)
-      - closePath()
-        - 闭合路径之后，图形绘制命令又重新指向到上下文中
-        - closePath 会 closePath
-      - stroke()
-        - 通过线条来绘制图形轮廓
-      - fill()
-        - 通过填充路径的内容区域生成实心的图形
-        - 如果path没有闭合，则fill()会自动闭合路径。
+### 绘制路径
+  - 绘制路径的步骤
+    - 创建路径起始点
+    - 调用绘制方法去绘制出路径
+    - 把路径封闭
+    - 一旦路径生成，通过描边或填充路径区域来渲染图形
+  - 绘制路径用到的方法
+    - beginPath()
+      - 新建一条路径，路径一旦创建成功，图形绘制命令被指向到路径上生成路径
+    - moveTo(x, y)
+      - 把画笔移动到指定的坐标(x, y)。相当于设置路径的起始点坐标
+    - lineTo(x, y)
+    - closePath()
+      - 闭合路径之后，图形绘制命令又重新指向到上下文中
+      - closePath 会 closePath
+    - stroke()
+      - 通过线条来绘制图形轮廓
+    - fill()
+      - 通过填充路径的内容区域生成实心的图形
+      - 如果path没有闭合，则fill()会自动闭合路径。
 
 ### 绘制圆形(椭圆)
   - 通过 路径（path）绘制
@@ -77,25 +77,25 @@
     2. 此方法需要 closePath()
       - 如果不关闭路径 会造成路径的 重绘 ，可以利用这个特性绘制特殊的图形
     3. 此方法只是绘制了 圆的路径，因此需要通过 fill() 或 stroke() 方法来 填充 或 描边 路径
-     ```html
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <title>Title</title>
-        </head>
-        <body>
-        <canvas id="canvas"></canvas>
-        </body>
-        <script>
-          const canvas = document.querySelector('#canvas')
-          let ctx = canvas.getContext('2d')
-          ctx.beginPath()
-          ctx.arc(Random(), Random(), Random()/10, 0, Math.PI * 2)
-          ctx.stroke()
-        </script>
-        </html>
-        ```
+   ```html
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <title>Title</title>
+      </head>
+      <body>
+      <canvas id="canvas"></canvas>
+      </body>
+      <script>
+        const canvas = document.querySelector('#canvas')
+        let ctx = canvas.getContext('2d')
+        ctx.beginPath()
+        ctx.arc(Random(), Random(), Random()/10, 0, Math.PI * 2)
+        ctx.stroke()
+      </script>
+      </html>
+      ```
 ### 绘制直线
   - moveTo(x, y)
   - lineTo(x, y)

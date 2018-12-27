@@ -145,4 +145,16 @@
       - (in float cpx, in float cpy) 控制点的坐标
       - (in float x, in float y) 终点坐标
 
+  - Path2D
+    - 通过 Path2D 创建的路径，可以直接被 fill() 或 stroke() 方法绘制
+    ```js
+    function _path(id){
+      let canvas = document.querySelector(id)
+      let ctx = canvas.getContext('2d')
+      let path = new Path2D()
+      path.rect(10,10,10,10)
+      ctx.fill(path)
+    }
+    ```
+
 

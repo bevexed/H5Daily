@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d285846-2fab-4ea6-9a94-91bb4747a319" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/canvas/CanvasPrictice.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canvas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/README.md" afterDir="false" />
     </list>
@@ -21,8 +20,8 @@
         <entry file="file://$PROJECT_DIR$/canvas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="711">
-                <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+              <first_editor relative-caret-position="734">
+                <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -34,8 +33,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/canvas/canvas画line.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="828">
+              <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+              <folding>
+                <element signature="e#417#1030#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +90,8 @@
         <option value="$PROJECT_DIR$/canvas/1.js" />
         <option value="$PROJECT_DIR$/canvas/2.js" />
         <option value="$PROJECT_DIR$/canvas/canvas基础使用.html" />
-        <option value="$PROJECT_DIR$/canvas/canvas画line.html" />
         <option value="$PROJECT_DIR$/canvas/CanvasPrictice.html" />
+        <option value="$PROJECT_DIR$/canvas/canvas画line.html" />
         <option value="$PROJECT_DIR$/canvas/README.md" />
       </list>
     </option>
@@ -169,7 +171,7 @@
       <workItem from="1544668436586" duration="734000" />
       <workItem from="1544669207531" duration="5034000" />
       <workItem from="1545631424110" duration="4206000" />
-      <workItem from="1545889455480" duration="2654000" />
+      <workItem from="1545889455480" duration="8980000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1544583021657</created>
@@ -248,11 +250,25 @@
       <option name="project" value="LOCAL" />
       <updated>1544689699006</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="canvas 绘制 线">
+      <created>1545892232391</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545892232392</updated>
+    </task>
+    <task id="LOCAL-00013" summary="canvas 绘制 曲线">
+      <created>1545899647462</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545899647462</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32453000" />
+    <option name="totallyTimeSpent" value="38779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -294,7 +310,9 @@
     <MESSAGE value="异步加载js文件" />
     <MESSAGE value="修改编号" />
     <MESSAGE value="canvas" />
-    <option name="LAST_COMMIT_MESSAGE" value="canvas" />
+    <MESSAGE value="canvas 绘制 线" />
+    <MESSAGE value="canvas 绘制 曲线" />
+    <option name="LAST_COMMIT_MESSAGE" value="canvas 绘制 曲线" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.postcssrc.js" />
@@ -397,16 +415,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/canvas/canvas画line.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="828">
+          <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+          <folding>
+            <element signature="e#417#1030#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/canvas/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="711">
-            <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+          <first_editor relative-caret-position="734">
+            <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

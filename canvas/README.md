@@ -4,6 +4,7 @@
     - 默认 300
   - height
     - 默认 150
+
 ### 使用 canvas 的步骤
   - 取得 canvas 元素
   - 取得上下文（context）
@@ -38,6 +39,7 @@
   </script>
   </html>
   ```
+
 ### 绘制矩形
   - 绘制一个填充的矩形
     - fillRect(x, y, width, height)
@@ -96,6 +98,7 @@
       </script>
       </html>
   ```
+
 ### 绘制直线
   - moveTo(x, y)
   - lineTo(x, y)
@@ -142,16 +145,43 @@
     - (in float cpx, in float cpy) 控制点的坐标
     - (in float x, in float y) 终点坐标
 
-- Path2D
+### Path2D
   - 通过 Path2D 创建的路径，可以直接被 fill() 或 stroke() 方法绘制
   ```js
   function _path(id){
     let canvas = document.querySelector(id)
     let ctx = canvas.getContext('2d')
     let path = new Path2D()
-    path.rect(10,10,10,10)
+    path.rect(10, 10, 10, 10)
     ctx.fill(path)
   }
   ```
+
+### 绘制图形渐变
+#### 绘制线性渐变
+  - createLinearGradient(xStart, yStart, xEnd, yEnd)
+    - 该方法使用 4 个参数，创建一个使用两个坐标点的 LinearGradient 对象
+  - addColorStop(offset, color)
+    - 该方法使用 2 个参数，为 LinearGradient 对象 追加渐变的颜色
+    - offset ：所设定的颜色离开渐变起始点的偏移量，该参数为 \[0-1] 的浮点值
+    - color  ： 绘制时所使用的颜色
+    - 因为是渐变，所以最少调用两次 addColorGradient 方法
+  - LinearGradient
+    - 把 fillStyle 设定为 LinearGradient 对象，才可以绘制渐变颜色
+
+#### 绘制径向渐变
+  - createRadialGradient(xStart, yStart, radiusStart, xEnd, yEnd, radiusEnd)
+    - 该方法使用 6 个参数，创建一个使用使用两个坐标点的 RadialGradient 对象
+  - 同样需要使用 addColorStop 方法添加渐变颜色
+
+### 图形变换
+#### 坐标变换
+  - 平移
+    - translate(x, y)
+  - 放大
+    - scale(x, y)
+  - 旋转
+    - rotate(angle)
+
 
 

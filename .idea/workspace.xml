@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d285846-2fab-4ea6-9a94-91bb4747a319" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/canvas/Canvas_Path2D.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/Canvas—LInearGradient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/Canvas坐标变换.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canvas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/README.md" afterDir="false" />
     </list>
@@ -16,12 +19,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/canvas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="734">
-                <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+              <first_editor relative-caret-position="4209">
+                <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -30,10 +33,28 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/canvas/Canvas坐标变换.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/canvas/Canvas—LInearGradient.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="759">
+              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/canvas/canvas画line.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
+            <state relative-caret-position="1541">
               <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
               <folding>
                 <element signature="e#417#1030#0" />
@@ -45,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/canvas/CanvasPrictice.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="552">
               <caret line="24" column="16" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
@@ -92,7 +113,10 @@
         <option value="$PROJECT_DIR$/canvas/canvas基础使用.html" />
         <option value="$PROJECT_DIR$/canvas/CanvasPrictice.html" />
         <option value="$PROJECT_DIR$/canvas/canvas画line.html" />
+        <option value="$PROJECT_DIR$/canvas/Canvas_Path2D.html" />
+        <option value="$PROJECT_DIR$/canvas/Canvas—LInearGradient.html" />
         <option value="$PROJECT_DIR$/canvas/README.md" />
+        <option value="$PROJECT_DIR$/canvas/Canvas坐标变换.html" />
       </list>
     </option>
   </component>
@@ -106,6 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,7 +152,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,7 +195,8 @@
       <workItem from="1544668436586" duration="734000" />
       <workItem from="1544669207531" duration="5034000" />
       <workItem from="1545631424110" duration="4206000" />
-      <workItem from="1545889455480" duration="8980000" />
+      <workItem from="1545889455480" duration="16213000" />
+      <workItem from="1546049867847" duration="1734000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1544583021657</created>
@@ -264,11 +289,39 @@
       <option name="project" value="LOCAL" />
       <updated>1545899647462</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="path2d">
+      <created>1545903011377</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545903011377</updated>
+    </task>
+    <task id="LOCAL-00015" summary="修改格式">
+      <created>1545905906389</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1545905906389</updated>
+    </task>
+    <task id="LOCAL-00016" summary="修改格式">
+      <created>1545905979486</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1545905979486</updated>
+    </task>
+    <task id="LOCAL-00017" summary="修改格式">
+      <created>1545906055689</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1545906055689</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38779000" />
+    <option name="totallyTimeSpent" value="47746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -312,7 +365,9 @@
     <MESSAGE value="canvas" />
     <MESSAGE value="canvas 绘制 线" />
     <MESSAGE value="canvas 绘制 曲线" />
-    <option name="LAST_COMMIT_MESSAGE" value="canvas 绘制 曲线" />
+    <MESSAGE value="path2d" />
+    <MESSAGE value="修改格式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改格式" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.postcssrc.js" />
@@ -406,16 +461,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/CanvasPrictice.html">
+    <entry file="file://$PROJECT_DIR$/canvas/Canvas_Path2D.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="299">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="4209">
+            <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/Canvas—LInearGradient.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/canvas/canvas画line.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
+        <state relative-caret-position="1541">
           <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
           <folding>
             <element signature="e#417#1030#0" />
@@ -423,15 +497,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="734">
-            <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
+    <entry file="file://$PROJECT_DIR$/canvas/CanvasPrictice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/Canvas坐标变换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
         </state>
       </provider>
     </entry>

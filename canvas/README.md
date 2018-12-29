@@ -186,11 +186,59 @@
 
 #### 矩阵变换
   - transform(m11, m12, m21, m22 ,dx, dy)
-|head|head|head|
-|:----:|:----|----:|
-|center|left|right|
-|center|left|right|
-|center|left|right|
+
+  | m11 | m21 | dx |
+  | ----| ----|----|
+  | m12 | m22 | right|
+  | 0   |  0  |  1 |
+
+  - setTransform()
+    - 重置 坐标原点Y
+
+### 绘制阴影
+ - shadowOffsetX：阴影横向位移量
+ - shadowOffsetY：阴影纵向位移量
+ - shadowColor：  阴影颜色
+ - shadowBlur：   阴影模糊范围
+
+### 使用图像
+#### 绘制图像
+  - drawImage(image, x, y,)
+  - drawImage(image, x, y, w, h)
+  - drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)
+
+    ```js
+    let canvas = document.querySelector('#canvas')
+      canvas.width = innerWidth
+      canvas.height = innerHeight
+      let ctx = canvas.getContext('2d')
+      let img = new Image()
+      img.src = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546064531104&di=888a5e4eeb5eeb2c0f585fb9da9378dd&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015cb958098437a84a0e282b877334.jpg'
+      img.onload = function () {
+        ctx.drawImage(img, 0, 0)
+      }
+    ```
+
+#### 图像平铺
+  - createPattern(image,type)
+    - image：平铺图像源
+    - type ：平铺方法
+      - no-repeat
+      - repeat-x
+      - repeat-y
+      - repeat
+  ```js
+   let canvas = document.querySelector('#canvas')
+    let ctx= canvas.getContext('2d')
+    let img  = new Image()
+    img.src = 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2174870178,3676368630&fm=26&gp=0.jpg'
+    img.onload=function () {
+      let prtn = ctx.createPattern(img,'repeat')
+      ctx.fillStyle = prtn
+      ctx.fillRect(0,0,300,300)
+    }
+  ```
+
 
 
 

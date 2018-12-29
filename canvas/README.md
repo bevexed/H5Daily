@@ -182,6 +182,15 @@
     - scale(x, y)
   - 旋转
     - rotate(angle)
+  > 三者都是基于 原点 变换
+
+#### 矩阵变换
+  - transform(m11, m12, m21, m22 ,dx, dy)
+|head|head|head|
+|:----:|:----|----:|
+|center|left|right|
+|center|left|right|
+|center|left|right|
 
 
 

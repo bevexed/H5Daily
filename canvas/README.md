@@ -239,6 +239,35 @@
     }
   ```
 
+#### 裁剪
+  - clip()
+  ```js
+   let canvas = document.querySelector('#canvas')
+    let ctx = canvas.getContext('2d')
+    let img = new Image()
+    img.src = 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2298249555,303155384&fm=26&gp=0.jpg'
+    img.onload = () => {
+      ctx.drawImage(img, 0, 0)
+    }
+
+    let path = new Path2D()
+    path.moveTo(100, 30)
+    path.lineTo(60, 30)
+    path.lineTo(60, 60)
+    path.closePath()
+    ctx.clip(path)
+   ```
+
+#### 像素处理
+  - getImageData(sx, sy, sw, sh)
+    - (sx, sy) : 所获取区域的横纵坐标
+    - (sw, sh) : 所获取区域的高度和宽度
+    - getImageData 所获取的 值 是一个 CanvasPixelArray 对象，具有 height、width、data 等属性
+      - data属性：保存图谱安像素数据的数组。类似\[r1 ,g1, b1, a1, r2, g2, b2, a2.....]
+
+  - putImageData(ImageData, dx, dy, \[, dirtyX, dirtyY, dirtyWidth, dirtyHeight])
+    - (dx, dy) : 重绘图片的起始横纵坐标
+    - (dirtyX, dirtyY, dirtyWidth, dirtyHeight) : 给出一个矩形，只显示此矩形内的数据
 
 
 

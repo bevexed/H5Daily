@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d285846-2fab-4ea6-9a94-91bb4747a319" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/canvas/Canvas-图形组合.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/month.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/detail&amp;summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/detail&amp;summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/figure和figcaption.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML5 新增 元素 与 属性/figure和figcaption.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas-像素处理.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas-像素处理.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canvas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/11月1.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,12 +16,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/canvas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="513">
-                <caret line="286" column="47" selection-start-line="286" selection-start-column="47" selection-end-line="286" selection-end-column="47" />
+              <first_editor relative-caret-position="636">
+                <caret line="273" column="61" selection-start-line="273" selection-start-column="61" selection-end-line="273" selection-end-column="61" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -36,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/canvas/Canvas-图形组合.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="667">
@@ -105,8 +99,8 @@
         <option value="$PROJECT_DIR$/canvas/Canvas-图片.html" />
         <option value="$PROJECT_DIR$/canvas/Canvas—线性渐变.html" />
         <option value="$PROJECT_DIR$/canvas/Canvas-像素处理.html" />
-        <option value="$PROJECT_DIR$/canvas/README.md" />
         <option value="$PROJECT_DIR$/canvas/Canvas-图形组合.html" />
+        <option value="$PROJECT_DIR$/canvas/README.md" />
       </list>
     </option>
   </component>
@@ -191,7 +185,7 @@
       <workItem from="1544669207531" duration="5034000" />
       <workItem from="1545631424110" duration="4206000" />
       <workItem from="1545889455480" duration="16213000" />
-      <workItem from="1546049867847" duration="16612000" />
+      <workItem from="1546049867847" duration="16967000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1544583021657</created>
@@ -347,14 +341,29 @@
       <option name="project" value="LOCAL" />
       <updated>1546063602434</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="图形合成">
+      <created>1546315083441</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1546315083441</updated>
+    </task>
+    <task id="LOCAL-00024" summary="图形合成">
+      <created>1546315606529</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1546315606529</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62624000" />
+    <option name="totallyTimeSpent" value="62979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15667075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -397,7 +406,8 @@
     <MESSAGE value="path2d" />
     <MESSAGE value="修改格式" />
     <MESSAGE value="canvas 坐标变换" />
-    <option name="LAST_COMMIT_MESSAGE" value="canvas 坐标变换" />
+    <MESSAGE value="图形合成" />
+    <option name="LAST_COMMIT_MESSAGE" value="图形合成" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.postcssrc.js" />
@@ -560,22 +570,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="513">
-            <caret line="286" column="47" selection-start-line="286" selection-start-column="47" selection-end-line="286" selection-end-column="47" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/canvas/Canvas-图形组合.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
           <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="636">
+            <caret line="273" column="61" selection-start-line="273" selection-start-column="61" selection-end-line="273" selection-end-column="61" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

@@ -271,7 +271,7 @@
     - (dirtyX, dirtyY, dirtyWidth, dirtyHeight) : 给出一个矩形，只显示此矩形内的数据
 
 ### 图形、图像的组合与混合
-#### 组合图形
+#### [组合图形][https://www.cnblogs.com/hzj680539/p/5068487.html]
   - globalCompositeOperation
     - source-over (默认值)
       - 新图形覆盖在原图形之上

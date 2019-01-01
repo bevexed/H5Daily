@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>canvas像素处理</title>
+  <meta charset="UTF-8">
+  <title>canvas像素处理</title>
 </head>
 <body>
-
+<canvas id="canvas"></canvas>
 </body>
+<script>
+  let canvas = document.querySelector('#canvas')
+  canvas.width = innerWidth
+  canvas.height = innerHeight
+  let ctx = canvas.getContext('2d')
+  ctx.fillRect(0,0,innerWidth,innerHeight)
+
+  let img = new Image()
+  img.src = '../img/month.jpg'
+  img.onload = () => {
+    ctx.drawImage(img, 0, 0, innerWidth / 3, innerWidth / 4)
+    let imgdata = ctx.getImageData(0, 0, img.width, img.height)
+    console.log(imgdata.data);
+
+    imgdata.data.forEach((item, index, array) => {
+      switch (index % 4) {
+        case 0:
+          array[index] = 255 - item / 2;
+          break;
+        case 1:
+          array[index] = 255 - item / 2;
+          break;
+        case 2:
+          array[index] = 255 - item / 2;
+          break;
+        default:
+          break;
+      }
+    })
+    // ctx.putImageData(imgdata, innerWidth / 3, 0, innerWidth / 3, innerWidth * 2/3,innerWidth/3,innerHeight/3 )
+    ctx.putImageData(imgdata, innerWidth / 3, 0)
+
+  }
+</script>
 </html>

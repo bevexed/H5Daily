@@ -264,10 +264,34 @@
     - (sw, sh) : 所获取区域的高度和宽度
     - getImageData 所获取的 值 是一个 CanvasPixelArray 对象，具有 height、width、data 等属性
       - data属性：保存图谱安像素数据的数组。类似\[r1 ,g1, b1, a1, r2, g2, b2, a2.....]
+       - 透明度的取值范围是 0-255
 
   - putImageData(ImageData, dx, dy, \[, dirtyX, dirtyY, dirtyWidth, dirtyHeight])
     - (dx, dy) : 重绘图片的起始横纵坐标
     - (dirtyX, dirtyY, dirtyWidth, dirtyHeight) : 给出一个矩形，只显示此矩形内的数据
 
-
-
+### 图形、图像的组合与混合
+#### 组合图形
+  - globalCompositeOperation
+    - source-over (默认值)
+      - 新图形覆盖在原图形之上
+    - destination-over
+      - 在原有图形之下绘制图形
+    - source-in
+      - 新图行与原有图形做 in 运算，新图行 与 旧图型 做 交集 , 新图片在上
+    - destination-in
+      - 原有图形与新图形做 in 运算， 新图行 与 旧图型 做 交集 , 旧图片在上
+    - source-out
+      - 新图行与原有图形做 out 运算， 新图行 与 旧图型 做 差集 , 新图片在上
+    - destination-out
+      - 原有图形与新图形做 out 运算，新图行 与 旧图型 做 差集 , 旧图片在上
+    - source-atop
+      - 只绘制新图形中与原有图形相重叠的部分以及未被重叠覆盖的原有图形，新图形的其他部分变为透明
+    - destination-atop
+      - 只绘制原有图形被新图形重叠覆盖的部分以及新图形的其他部分，原有图形中的其他部分变为透明，不绘制新图形中与原有图形相重叠部分
+    - lighter
+      - 原图型与新图行均重绘，重叠部分加高亮处理
+    - xor
+      - 只绘制新图形中与原图形中不重叠部分，重叠部分变透明
+    - copy
+      - 只绘制新图形，原有图形中未与新图形重叠部分变透明

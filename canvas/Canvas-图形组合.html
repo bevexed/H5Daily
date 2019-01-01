@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas-图形组合</title>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+</body>
+<script>
+  let canvas = document.querySelector('#canvas')
+  let ctx = canvas.getContext('2d')
+
+  ctx.fillRect(0, 0, 200, 200)
+
+  // 新图片 至于 就图片之下
+  ctx.globalCompositeOperation = 'destination-over'
+  ctx.fillStyle = 'red'
+  ctx.fillRect(20,20,200,200)
+
+
+  // 新图行 与 旧图型 做 交集 , 新图片在上
+  ctx.globalCompositeOperation = 'source-in'
+  ctx.fillStyle = 'green'
+  ctx.fillRect(40,40,200,200)
+
+
+  // 新图行 与 旧图型 做 交集 , 旧图片在上
+  ctx.globalCompositeOperation = 'destination-in'
+  ctx.fillStyle = 'yellow'
+  ctx.fillRect(60,60,200,200)
+
+  // 新图行 与 旧图型 做 差集 , 新图片在上
+  ctx.globalCompositeOperation = 'source-out'
+  ctx.fillStyle = 'pink'
+  ctx.fillRect(80,80,200,200)
+
+  // 新图行 与 旧图型 做 差集 , 旧图片在上
+  ctx.globalCompositeOperation = 'destination-out'
+  ctx.fillStyle = 'brown'
+  ctx.fillRect(100,100,200,200)
+
+</script>
+</html>

@@ -329,3 +329,16 @@
     - 获取文字宽度
     - 返回一个 TextMetrics 对象
       - TextMetrics 的 width 属性表示当前字体下的文字的长度
+
+### 保存与恢复状态
+  - save
+  - restore
+    - 在需要保存状态的地方使用 save
+    - 在需要恢复保存状态之前的地方使用 restore
+
+### 保存文件
+  - canvas.toDataURL(type, encoderOptions)
+    - 返回一个 Data URL
+    - type：图片格式，默认为 image/png
+    - encoderOptions：在指定图片格式为 image/jpeg 或 image/webp的情况下，可以从 0 到 1 的区间内选择图片的质量。如果超出取值范围，将会使用默认值 0.92。其他参数会被忽略。
+

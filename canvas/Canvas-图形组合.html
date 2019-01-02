@@ -3,42 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>Canvas-图形组合</title>
+  <style>
+    #canvas {
+      margin-top: 20px;
+      border: 1px solid red;
+    }
+  </style>
 </head>
 <body>
+<div>
+  <label for="selected">
+    <select name="" id="selected">
+      <option value=""></option>
+    </select>
+  </label>
+</div>
+
 <canvas id="canvas"></canvas>
 </body>
 <script>
   let canvas = document.querySelector('#canvas')
+  canvas.width = 500
+  canvas.height = 500
   let ctx = canvas.getContext('2d')
 
-  ctx.fillRect(0, 0, 200, 200)
+  const globalCompositeOperationOptions = {
+    'source-over': 'source-over',
+    'destination-over': 'destination-over',
+    'source-in': 'source-in',
+    'destination-in': 'destination-in',
+    'source-out': 'source-out',
+    'destination-out': 'destination-out',
+    'source-atop': 'source-atop',
+    'destination-atop': 'destination-atop',
+    'lighter': 'lighter',
+    'xor': 'xor',
+    'copy': 'copy'
+  }
 
-  // 新图片 至于 就图片之下
-  ctx.globalCompositeOperation = 'destination-over'
-  ctx.fillStyle = 'red'
-  ctx.fillRect(20,20,200,200)
+  let options = ''
+  for (let [name, value] of Object.entries(globalCompositeOperationOptions)) {
+    let option = `
+      <option value="${value}">${name}</option>
+    `
+    options += option
+  }
 
+  let select = document.querySelector('#selected')
+  select.innerHTML = options
 
-  // 新图行 与 旧图型 做 交集 , 新图片在上
-  ctx.globalCompositeOperation = 'source-in'
-  ctx.fillStyle = 'green'
-  ctx.fillRect(40,40,200,200)
+  demoGlobalCompositeOperation(select.value)
+  select.onchange = (e) => {
+    demoGlobalCompositeOperation(select.value)
+  }
 
+  function demoGlobalCompositeOperation(option) {
 
-  // 新图行 与 旧图型 做 交集 , 旧图片在上
-  ctx.globalCompositeOperation = 'destination-in'
-  ctx.fillStyle = 'yellow'
-  ctx.fillRect(60,60,200,200)
+    ctx.clearRect(0,0,innerWidth,innerHeight)
 
-  // 新图行 与 旧图型 做 差集 , 新图片在上
-  ctx.globalCompositeOperation = 'source-out'
-  ctx.fillStyle = 'pink'
-  ctx.fillRect(80,80,200,200)
+    ctx.globalCompositeOperation = 'source-over'
+    ctx.beginPath()
+    ctx.arc(100, 100, 50, 0, Math.PI * 2)
+    ctx.closePath()
+    ctx.fillStyle = 'pink'
+    ctx.fill()
 
-  // 新图行 与 旧图型 做 差集 , 旧图片在上
-  ctx.globalCompositeOperation = 'destination-out'
-  ctx.fillStyle = 'brown'
-  ctx.fillRect(100,100,200,200)
+    ctx.globalCompositeOperation = option
+
+    ctx.fillStyle = 'skyblue'
+    ctx.fillRect(100, 100, 100, 100)
+  }
 
 </script>
 </html>

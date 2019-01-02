@@ -206,6 +206,10 @@
   - drawImage(image, x, y,)
   - drawImage(image, x, y, w, h)
   - drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)
+    - (sx, sy) 截取起点
+    - (sw, sh) 截取终点（宽高）
+    - (dx, dy) 放置在 canvas 的位置的起点
+    - (dw, dh) 放置在 canvas 上的宽高
 
     ```js
     let canvas = document.querySelector('#canvas')
@@ -295,3 +299,6 @@
       - 只绘制新图形中与原图形中不重叠部分，重叠部分变透明
     - copy
       - 只绘制新图形，原有图形中未与新图形重叠部分变透明
+
+#### 混合图像
+  -

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d285846-2fab-4ea6-9a94-91bb4747a319" name="Default Changelist" comment="合成">
-      <change afterPath="$PROJECT_DIR$/canvas/demo/run/imgs/1331259eac6e162de4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/canvas/demo/run/index.html" afterDir="false" />
+    <list default="true" id="3d285846-2fab-4ea6-9a94-91bb4747a319" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canvas/Canvas-图形组合.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas-图形组合.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canvas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/demo/colorfull-ball.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/colorfull-ball.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,12 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/canvas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="803">
-                <caret line="303" column="3" selection-start-line="303" selection-start-column="3" selection-end-line="303" selection-end-column="3" />
+              <first_editor relative-caret-position="786">
+                <caret line="330" column="43" selection-start-line="330" selection-start-column="43" selection-end-line="330" selection-end-column="43" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -46,35 +43,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/canvas/Canvas-图片.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="3" selection-start-line="15" selection-end-line="16" />
+            <state relative-caret-position="92">
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/canvas/demo/colorfull-ball.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/canvas/demo/run/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/canvas/Canvas-图形组合.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+            <state relative-caret-position="1081">
+              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -142,8 +121,8 @@
         <option value="$PROJECT_DIR$/canvas/demo/colorfull-ball.html" />
         <option value="$PROJECT_DIR$/canvas/demo/run.html" />
         <option value="$PROJECT_DIR$/canvas/demo/run/index.html" />
-        <option value="$PROJECT_DIR$/canvas/README.md" />
         <option value="$PROJECT_DIR$/canvas/Canvas-图形组合.html" />
+        <option value="$PROJECT_DIR$/canvas/README.md" />
       </list>
     </option>
   </component>
@@ -169,6 +148,27 @@
               <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
               <item name="h5_daily" type="462c0819:PsiDirectoryNode" />
               <item name="canvas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h5_daily" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h5_daily" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="run" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h5_daily" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="run" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
@@ -232,7 +232,7 @@
       <workItem from="1544669207531" duration="5034000" />
       <workItem from="1545631424110" duration="4206000" />
       <workItem from="1545889455480" duration="16213000" />
-      <workItem from="1546049867847" duration="31967000" />
+      <workItem from="1546049867847" duration="33976000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1544583021657</created>
@@ -423,11 +423,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546392147227</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="图像合成demo">
+      <created>1546407585485</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1546407585485</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77979000" />
+    <option name="totallyTimeSpent" value="79988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -476,7 +483,8 @@
     <MESSAGE value="canvas 坐标变换" />
     <MESSAGE value="图形合成" />
     <MESSAGE value="小球demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="小球demo" />
+    <MESSAGE value="图像合成demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="图像合成demo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.postcssrc.js" />
@@ -625,32 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/demo/colorfull-ball.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/demo/run/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="803">
-            <caret line="303" column="3" selection-start-line="303" selection-start-column="3" selection-end-line="303" selection-end-column="3" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/canvas/canvas-基础使用.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -658,17 +640,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/demo/run/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/demo/colorfull-ball.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/canvas/Canvas-图片.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="3" selection-start-line="15" selection-end-line="16" />
+        <state relative-caret-position="92">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/canvas/Canvas-图形组合.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+        <state relative-caret-position="1081">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="786">
+            <caret line="330" column="43" selection-start-line="330" selection-start-column="43" selection-end-line="330" selection-end-column="43" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

@@ -301,4 +301,31 @@
       - 只绘制新图形，原有图形中未与新图形重叠部分变透明
 
 #### 混合图像
-  -
+  - normal
+  - darken
+  - lighten
+  - multiply
+  - screen
+  - color-burn
+  - color-dodge
+  - hard-light
+  - soft-light
+  - overlay
+  - difference
+  - exclusion
+
+### 绘制文字
+  - fillText(text, x, y, \[maxWidth])
+  - strokeText(text, x, y, \[maxWidth])
+    - text：要输入的文本内容
+    - (x, y)：输入文本的位置
+    - maxWidth：文本最大宽度，防止文本溢出
+  - font: 设置文字字体
+  - textAlign：设置文字水平对平方式
+    - start、end、left、right、center
+  - textBaseLine：设置文字垂直对齐方式
+    - top、hanging、middle、alphabetic、ideographic、bottom
+  - measureText(text)
+    - 获取文字宽度
+    - 返回一个 TextMetrics 对象
+      - TextMetrics 的 width 属性表示当前字体下的文字的长度

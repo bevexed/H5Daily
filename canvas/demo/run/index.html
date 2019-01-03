@@ -32,8 +32,7 @@
       this.speedX = 0;
       this.speedY = 0;
       this.R = [] // 保存所有图片资源
-      this.loadingAllResource()
-      window.onkeydown = (e) => this.upDate(e)
+      this.loadingAllResource(this.render)
     }
 
     init() {
@@ -41,7 +40,7 @@
       this.canvas.height = innerHeight
     }
 
-    loadingAllResource() {
+    loadingAllResource(callback) {
       let xhr = new XMLHttpRequest()
       xhr.onreadystatechange = () => {
         if (xhr.readyState === 4) {
@@ -50,13 +49,14 @@
             let img = new Image()
             img.src = item.value
             img.onload = () => {
+              console.log(img);
               this.R.push({name, img})
               this.ctx.clearRect(0, 0, innerWidth, innerHeight)
               this.ctx.font = "20px 黑体"
               this.ctx.textAlign = "center"
               this.ctx.fillText(`资源加载中，已经载入第${this.R.length}张/共${array.length}张`, innerWidth / 2, innerHeight * (1 - 0.618))
               if (this.R.length === array.length) {
-                this.render()
+                callback.call(this)
               }
             }
           })
@@ -68,6 +68,7 @@
 
     render() {
       setInterval(() => {
+        window.onkeydown = (e) => this.upDate(e)
         this.distanceX += this.speedX
         this.distanceY += this.speedY
         // 边界控制

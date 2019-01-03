@@ -10,8 +10,7 @@
     }
 
     #canvas {
-      box-sizing: border-box;
-      border: 1px solid red;
+
     }
   </style>
 </head>
@@ -19,28 +18,100 @@
 <canvas id="canvas"></canvas>
 </body>
 <script>
-  let canvas = document.querySelector('#canvas')
-  canvas.width = innerWidth
-  canvas.height = innerHeight
-  let ctx = canvas.getContext('2d')
 
-  let img = new Image()
-  img.src = './imgs/1331259eac6e162de4.png'
+  class Tiger {
+    constructor(option) {
+      this.canvas = document.querySelector(option.id)
+      this.ctx = this.canvas.getContext('2d')
+      this.Resource = option.Resource
+      this.init()
+      this.dirction = 0;
+      this.step = -1;
+      this.distanceX = 0;
+      this.distanceY = 0;
+      this.speedX = 0;
+      this.speedY = 0;
+      this.R = [] // 保存所有图片资源
+      this.loadingAllResource()
+      window.onkeydown = (e) => this.upDate(e)
+    }
 
-  let i = 0
+    init() {
+      this.canvas.width = innerWidth
+      this.canvas.height = innerHeight
+    }
 
-  img.onload = () => {
-    setInterval(() => {
-      i++;
-      let sx = (i - 1) * 150
-      if (i === 3) i = 0;
-      console.log(i);
-      ctx.drawImage(img, sx, 0, 150, 120, 0, 0, 150, 120)
-      ctx.drawImage(img, sx, 120, 150, 120, 150, 0, 150, 120)
-      ctx.drawImage(img, sx, 240, 150, 120, 300, 0, 150, 120)
-      ctx.drawImage(img, sx, 360, 150, 120, 450, 0, 150, 120)
-    }, 1000/5)
+    loadingAllResource() {
+      let xhr = new XMLHttpRequest()
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4) {
+          JSON.parse(xhr.response).forEach((item, index, array) => {
+            let name = item.name
+            let img = new Image()
+            img.src = item.value
+            img.onload = () => {
+              this.R.push({name, img})
+              this.ctx.clearRect(0, 0, innerWidth, innerHeight)
+              this.ctx.font = "20px 黑体"
+              this.ctx.textAlign = "center"
+              this.ctx.fillText(`资源加载中，已经载入第${this.R.length}张/共${array.length}张`, innerWidth / 2, innerHeight * (1 - 0.618))
+              if (this.R.length === array.length) {
+                this.render()
+              }
+            }
+          })
+        }
+      }
+      xhr.open("get", this.Resource, true)
+      xhr.send(null)
+    }
 
+    render() {
+      setInterval(() => {
+        this.distanceX += this.speedX
+        this.distanceY += this.speedY
+        // 边界控制
+        if (this.distanceX > innerWidth - 150) this.distanceX = innerWidth - 150
+        if (this.distanceX < 0) this.distanceX = 0
+        if (this.distanceY > innerHeight - 120) this.distanceY = innerHeight - 120
+        if (this.distanceY < 0) this.distanceY = 0
+        if (this.step === 3) {
+          this.step = -1
+        }
+        this.step++;
+        ;this.ctx.clearRect(0, 0, innerWidth, innerHeight);
+        this.ctx.drawImage(this.R.filter(item => item.name === 'tiger')[0].img, this.step * 600 / 4, this.dirction, 600 / 4, 480 / 4, this.distanceX, this.distanceY, 600 / 4, 480 / 4)
+      }, 1000 / 20)
+    }
+
+    upDate(e) {
+
+      switch (e.which) {
+        case 40: // 下
+          this.dirction = 0;
+          this.speedY = 4;
+          break;
+        case 39: // 右
+          this.dirction = 240;
+          this.speedX = 4;
+          break;
+        case 38: // 上
+          this.dirction = 360;
+          this.speedY = -4;
+          break;
+        case 37: // 左
+          this.dirction = 120;
+          this.speedX = -4;
+          break;
+      }
+    }
   }
+
+  let tiger = new Tiger({
+    id: '#canvas',
+    Resource: './Resource.json'
+  })
+
+
 </script>
 </html>

@@ -1,0 +1,24 @@
+{
+  "images": [
+    {
+      "name": "sky",
+      "url": "./img/sky.png"
+    },
+    {
+      "name": "birds",
+      "url": "./img/birds.png"
+    },
+    {
+      "name": "land",
+      "url": "./img/land.png"
+    },
+    {
+      "name": "pipe1",
+      "url": "./img/pipe1.png"
+    },
+    {
+      "name": "pipe2",
+      "url": "./img/pipe2.png"
+    }
+  ]
+}

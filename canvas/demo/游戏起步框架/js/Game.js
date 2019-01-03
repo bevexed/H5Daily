@@ -3,11 +3,8 @@ class Game {
     this.canvas = document.querySelector(option.id)
     this.ctx = this.canvas.getContext('2d')
     this.ResourceJson = option.ResourceJson
-    this.R = {}
     this.init()
     this.loadAllResource(this.start)
-    this.pipes = []
-    this.time = 0
   }
 
   // 设置画布的宽度和高度
@@ -30,6 +27,7 @@ class Game {
 
   // 加载资源
   loadAllResource(callback) {
+    this.R = {}
     let alreadyDone = 0
     let xhr = new XMLHttpRequest()
     xhr.onreadystatechange = () => {
@@ -59,25 +57,8 @@ class Game {
 
   // 开始游戏
   start() {
-    this.bg = new Bg()
-    this.land = new Land()
-    setInterval(() => {
-      this.time++;
+    setInterval(()=>{
       this.ctx.clearRect(0, 0, innerWidth, innerHeight)
-      this.bg.render()
-
-      this.pipes.forEach((item, index, arr) => {
-        item.render()
-        if (arr.length > 5) {
-          arr.splice(0, 2)
-        }
-      })
-
-      if (this.time % 200 === 0) {
-        new Pipe()
-      }
-
-      this.land.render()
-    }, 1000 / 60)
+    })
   }
 }

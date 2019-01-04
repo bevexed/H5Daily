@@ -8,12 +8,12 @@
 <canvas id="canvas"></canvas>
 </body>
 <script>
-  let canvas = document.querySelector('#canvas')
-  canvas.width = innerWidth
-  canvas.height = innerHeight
-  let ctx = canvas.getContext('2d')
-  let img = new Image()
-  img.src = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546064531104&di=888a5e4eeb5eeb2c0f585fb9da9378dd&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015cb958098437a84a0e282b877334.jpg'
+  let canvas = document.querySelector('#canvas');
+  canvas.width = innerWidth;
+  canvas.height = innerHeight;
+  let ctx = canvas.getContext('2d');
+  let img = new Image();
+  img.src = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546064531104&di=888a5e4eeb5eeb2c0f585fb9da9378dd&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015cb958098437a84a0e282b877334.jpg';
   img.onload = function () {
     ctx.drawImage(img, 0, 0)
   }

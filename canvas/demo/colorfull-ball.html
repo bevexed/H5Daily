@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>colorfulBall</title>
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     canvas {
       border: 1px solid red;
     }
@@ -18,19 +19,19 @@
 <canvas id="canvas"></canvas>
 </body>
 <script>
-  let canvas = document.querySelector('#canvas')
-  canvas.height = innerHeight
-  canvas.width = innerWidth
-  let ctx = canvas.getContext('2d')
+  let canvas = document.querySelector('#canvas');
+  canvas.height = innerHeight;
+  canvas.width = innerWidth;
+  let ctx = canvas.getContext('2d');
 
-  const ballsArr = []
+  const ballsArr = [];
 
   class Ball {
     constructor(x, y, arr) {
       this.x = x; // x轴位置
       this.y = y; // y轴位置
       this.r = 30;
-      this.color = `rgba(${Math.random()*256},${Math.random()*256},${Math.random()*256})`;
+      this.color = `rgba(${Math.random() * 256},${Math.random() * 256},${Math.random() * 256})`;
       this.dx = parseInt(Math.random() * 18) - 9;
       this.dy = parseInt(Math.random() * 18) - 9;
       arr.push(this)
@@ -38,9 +39,9 @@
 
     render() {
       ctx.beginPath();
-      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, true)
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
       ctx.closePath();
-      ctx.fillStyle = this.color
+      ctx.fillStyle = this.color;
       ctx.fill()
     }
 
@@ -61,13 +62,13 @@
 
 
   setInterval(() => {
-    ctx.clearRect(0, 0, innerWidth, innerHeight)
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
     ballsArr.forEach(item => {
-      item.update()
-      item.gpDie(ballsArr)
+      item.update();
+      item.gpDie(ballsArr);
       item && item.render()
     })
-  }, 1000/60)
+  }, 1000 / 60);
 
   canvas.onmousemove = (event) => {
     new Ball(event.clientX, event.clientY, ballsArr)

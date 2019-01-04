@@ -8,34 +8,34 @@
 <canvas id="canvas"></canvas>
 </body>
 <script>
-  let canvas = document.querySelector('#canvas')
-  canvas.width = window.innerWidth
-  canvas.height = window.innerHeight
-  let ctx = canvas.getContext('2d')
+  let canvas = document.querySelector('#canvas');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  let ctx = canvas.getContext('2d');
 
 
-  let time = 1000 / 6
-  setInterval(drawCircle, time)
-  setInterval(drawAngl, time)
-  setInterval(drawRect, time)
+  let time = 1000 / 6;
+  setInterval(drawCircle, time);
+  setInterval(drawAngl, time);
+  setInterval(drawRect, time);
 
   function drawCircle() {
-    ctx.beginPath()
-    ctx.arc(Random(), Random(), Random()/10, 0, Math.PI * 2)
+    ctx.beginPath();
+    ctx.arc(Random(), Random(), Random() / 10, 0, Math.PI * 2);
     ctx.stroke()
   }
 
   function drawAngl() {
-    ctx.beginPath()
-    ctx.moveTo(Random(), Random())
-    ctx.lineTo(Random(), Random())
-    ctx.lineTo(Random(), Random())
-    ctx.closePath()
+    ctx.beginPath();
+    ctx.moveTo(Random(), Random());
+    ctx.lineTo(Random(), Random());
+    ctx.lineTo(Random(), Random());
+    ctx.closePath();
     ctx.stroke()
   }
 
   function drawRect() {
-    ctx.strokeRect(Random(), Random(), Random()/10, Random()/10)
+    ctx.strokeRect(Random(), Random(), Random() / 10, Random() / 10)
   }
 
   function Random() {

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Path2D</title>
+  <meta charset="UTF-8">
+  <title>Path2D</title>
 </head>
 <body>
 <canvas id="canvas"></canvas>
 </body>
 <script>
-  let canvas = document.querySelector('#canvas')
-  let ctx = canvas.getContext('2d')
+  let canvas = document.querySelector('#canvas');
+  let ctx = canvas.getContext('2d');
 
-  let path = new Path2D()
-  path.moveTo(100,100)
-  path.lineTo(200,200)
+  let path = new Path2D();
+  path.moveTo(100, 100);
+  path.lineTo(200, 200);
   ctx.stroke(path)
 </script>
 </html>

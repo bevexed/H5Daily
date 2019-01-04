@@ -8,20 +8,20 @@
 <canvas id="canvas"></canvas>
 </body>
 <script>
-  let canvas = document.querySelector('#canvas')
-  canvas.width = innerWidth
-  canvas.height = innerHeight
-  let ctx = canvas.getContext('2d')
+  let canvas = document.querySelector('#canvas');
+  canvas.width = innerWidth;
+  canvas.height = innerHeight;
+  let ctx = canvas.getContext('2d');
 
-  let a = 'Hollow'
-  ctx.font = 'bold 30px sans-serif'
-  ctx.fillText(a, 50, 30)
-  let sanf = ctx.measureText(a)
-  ctx.fillText(sanf.width, 50, 60)
+  let a = 'Hollow';
+  ctx.font = 'bold 30px sans-serif';
+  ctx.fillText(a, 50, 30);
+  let sanf = ctx.measureText(a);
+  ctx.fillText(sanf.width, 50, 60);
 
-  ctx.strokeText(a, 100, 90)
-  ctx.font = 'bold 30px arial'
-  let pf = ctx.measureText(a)
+  ctx.strokeText(a, 100, 90);
+  ctx.font = 'bold 30px arial';
+  let pf = ctx.measureText(a);
   ctx.strokeText(pf.width, 100, 120)
 
 </script>

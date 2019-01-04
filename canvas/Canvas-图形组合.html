@@ -22,10 +22,10 @@
 <canvas id="canvas"></canvas>
 </body>
 <script>
-  let canvas = document.querySelector('#canvas')
-  canvas.width = 500
-  canvas.height = 500
-  let ctx = canvas.getContext('2d')
+  let canvas = document.querySelector('#canvas');
+  canvas.width = 500;
+  canvas.height = 500;
+  let ctx = canvas.getContext('2d');
 
   const globalCompositeOperationOptions = {
     'source-over': 'source-over',
@@ -39,38 +39,38 @@
     'lighter': 'lighter',
     'xor': 'xor',
     'copy': 'copy'
-  }
+  };
 
-  let options = ''
+  let options = '';
   for (let [name, value] of Object.entries(globalCompositeOperationOptions)) {
     let option = `
       <option value="${value}">${name}</option>
-    `
+    `;
     options += option
   }
 
-  let select = document.querySelector('#selected')
-  select.innerHTML = options
+  let select = document.querySelector('#selected');
+  select.innerHTML = options;
 
-  demoGlobalCompositeOperation(select.value)
+  demoGlobalCompositeOperation(select.value);
   select.onchange = () => {
     demoGlobalCompositeOperation(select.value)
-  }
+  };
 
   function demoGlobalCompositeOperation(option) {
 
-    ctx.clearRect(0,0,innerWidth,innerHeight)
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
 
-    ctx.globalCompositeOperation = 'source-over'
-    ctx.beginPath()
-    ctx.arc(100, 100, 50, 0, Math.PI * 2)
-    ctx.closePath()
-    ctx.fillStyle = 'pink'
-    ctx.fill()
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.beginPath();
+    ctx.arc(100, 100, 50, 0, Math.PI * 2);
+    ctx.closePath();
+    ctx.fillStyle = 'pink';
+    ctx.fill();
 
-    ctx.globalCompositeOperation = option
+    ctx.globalCompositeOperation = option;
 
-    ctx.fillStyle = 'skyblue'
+    ctx.fillStyle = 'skyblue';
     ctx.fillRect(100, 100, 100, 100)
   }
 

@@ -1,12 +1,12 @@
 class Game {
   constructor(option) {
-    this.canvas = document.querySelector(option.id)
-    this.ctx = this.canvas.getContext('2d')
-    this.ResourceJson = option.ResourceJson
-    this.R = {}
-    this.init()
-    this.loadAllResource(this.start)
-    this.pipes = []
+    this.canvas = document.querySelector(option.id);
+    this.ctx = this.canvas.getContext('2d');
+    this.ResourceJson = option.ResourceJson;
+    this.R = {};
+    this.init();
+    this.loadAllResource(this.start);
+    this.pipes = [];
     this.time = 0
   }
 
@@ -24,27 +24,27 @@ class Game {
       innerHeight = 500
     }
 
-    this.canvas.width = innerWidth
+    this.canvas.width = innerWidth;
     this.canvas.height = innerHeight
   }
 
   // 加载资源
   loadAllResource(callback) {
-    let alreadyDone = 0
-    let xhr = new XMLHttpRequest()
+    let alreadyDone = 0;
+    let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
-        let res = JSON.parse(xhr.response)
+        let res = JSON.parse(xhr.response);
         console.log(res);
         res.images.forEach((item, index, array) => {
-          this.R[item.name] = new Image()
-          this.R[item.name].src = item.url
+          this.R[item.name] = new Image();
+          this.R[item.name].src = item.url;
           this.R[item.name].onload = () => {
             alreadyDone++;
-            this.ctx.clearRect(0, 0, innerWidth, innerHeight)
-            this.ctx.textAlign = "center"
-            this.ctx.font = "20px 黑体"
-            this.ctx.fillText(`正在加载${alreadyDone}/${array.length},请稍候`, innerWidth / 2, innerHeight * (1 - 0.618))
+            this.ctx.clearRect(0, 0, innerWidth, innerHeight);
+            this.ctx.textAlign = "center";
+            this.ctx.font = "20px 黑体";
+            this.ctx.fillText(`正在加载${alreadyDone}/${array.length},请稍候`, innerWidth / 2, innerHeight * (1 - 0.618));
 
             if (alreadyDone === array.length) {
               callback.call(this)
@@ -52,32 +52,36 @@ class Game {
           }
         })
       }
-    }
-    xhr.open("get", this.ResourceJson, true)
+    };
+    xhr.open("get", this.ResourceJson, true);
     xhr.send(null)
   }
 
   // 开始游戏
   start() {
-    this.bg = new Bg()
-    this.land = new Land()
+    this.bg = new Bg();
+    this.land = new Land();
+    this.bird = new Bird();
     setInterval(() => {
       this.time++;
-      this.ctx.clearRect(0, 0, innerWidth, innerHeight)
-      this.bg.render()
+      this.ctx.clearRect(0, 0, innerWidth, innerHeight);
+      this.bg.render();
 
       this.pipes.forEach((item, index, arr) => {
-        item.render()
+        item.render();
         if (arr.length > 5) {
           arr.splice(0, 2)
         }
-      })
+      });
 
       if (this.time % 200 === 0) {
         new Pipe()
       }
 
-      this.land.render()
+      this.land.render();
+
+      this.bird.render()
     }, 1000 / 60)
   }
+
 }

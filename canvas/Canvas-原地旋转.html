@@ -8,21 +8,21 @@
 <canvas id="canvas"></canvas>
 </body>
 <script>
-  let canvas = document.querySelector("#canvas")
-  canvas.width = innerWidth
-  canvas.height = innerHeight
-  let ctx = canvas.getContext('2d')
-  let edg = 0
+  let canvas = document.querySelector("#canvas");
+  canvas.width = innerWidth;
+  canvas.height = innerHeight;
+  let ctx = canvas.getContext('2d');
+  let edg = 0;
   setInterval(() => {
     roundRotate()
-  }, 1000 / 60)
+  }, 1000 / 60);
   roundRotate = () => {
     edg += 0.1;
-    ctx.save()
-    ctx.clearRect(0, 0, innerWidth, innerHeight)
-    ctx.translate(innerWidth / 2, innerHeight*(1 - 0.618))
-    ctx.rotate(edg)
-    ctx.fillRect(-100, -100, 200, 200)
+    ctx.save();
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    ctx.translate(innerWidth / 2, innerHeight * (1 - 0.618));
+    ctx.rotate(edg);
+    ctx.fillRect(-100, -100, 200, 200);
     ctx.restore()
   }
 </script>

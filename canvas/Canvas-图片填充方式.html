@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>pattern</title>
+  <meta charset="UTF-8">
+  <title>pattern</title>
 </head>
 <body>
 <canvas id="canvas"></canvas>
 </body>
 <script>
-  let canvas = document.querySelector('#canvas')
-  canvas.width = window.innerWidth
-  canvas.height = window.innerHeight
-  let ctx= canvas.getContext('2d')
-  let img  = new Image()
-  img.src = 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2174870178,3676368630&fm=26&gp=0.jpg'
-  img.onload=function () {
-    ctx.fillStyle = ctx.createPattern(img,'repeat');
-    ctx.fillRect(0,0,innerWidth,innerHeight)
+  let canvas = document.querySelector('#canvas');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  let ctx = canvas.getContext('2d');
+  let img = new Image();
+  img.src = 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2174870178,3676368630&fm=26&gp=0.jpg';
+  img.onload = function () {
+    ctx.fillStyle = ctx.createPattern(img, 'repeat');
+    ctx.fillRect(0, 0, innerWidth, innerHeight)
   }
 
 </script>

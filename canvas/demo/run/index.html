@@ -21,66 +21,66 @@
 
   class Tiger {
     constructor(option) {
-      this.canvas = document.querySelector(option.id)
-      this.ctx = this.canvas.getContext('2d')
-      this.Resource = option.Resource
-      this.init()
+      this.canvas = document.querySelector(option.id);
+      this.ctx = this.canvas.getContext('2d');
+      this.Resource = option.Resource;
+      this.init();
       this.dirction = 0;
       this.step = -1;
       this.distanceX = 0;
       this.distanceY = 0;
       this.speedX = 0;
       this.speedY = 0;
-      this.R = [] // 保存所有图片资源
+      this.R = []; // 保存所有图片资源
       this.loadingAllResource(this.render)
     }
 
     init() {
-      this.canvas.width = innerWidth
+      this.canvas.width = innerWidth;
       this.canvas.height = innerHeight
     }
 
     loadingAllResource(callback) {
-      let xhr = new XMLHttpRequest()
+      let xhr = new XMLHttpRequest();
       xhr.onreadystatechange = () => {
         if (xhr.readyState === 4) {
           JSON.parse(xhr.response).forEach((item, index, array) => {
-            let name = item.name
-            let img = new Image()
-            img.src = item.value
+            let name = item.name;
+            let img = new Image();
+            img.src = item.value;
             img.onload = () => {
               console.log(img);
-              this.R.push({name, img})
-              this.ctx.clearRect(0, 0, innerWidth, innerHeight)
-              this.ctx.font = "20px 黑体"
-              this.ctx.textAlign = "center"
-              this.ctx.fillText(`资源加载中，已经载入第${this.R.length}张/共${array.length}张`, innerWidth / 2, innerHeight * (1 - 0.618))
+              this.R.push({name, img});
+              this.ctx.clearRect(0, 0, innerWidth, innerHeight);
+              this.ctx.font = "20px 黑体";
+              this.ctx.textAlign = "center";
+              this.ctx.fillText(`资源加载中，已经载入第${this.R.length}张/共${array.length}张`, innerWidth / 2, innerHeight * (1 - 0.618));
               if (this.R.length === array.length) {
                 callback.call(this)
               }
             }
           })
         }
-      }
-      xhr.open("get", this.Resource, true)
+      };
+      xhr.open("get", this.Resource, true);
       xhr.send(null)
     }
 
     render() {
       setInterval(() => {
-        window.onkeydown = (e) => this.upDate(e)
-        this.distanceX += this.speedX
-        this.distanceY += this.speedY
+        window.onkeydown = (e) => this.upDate(e);
+        this.distanceX += this.speedX;
+        this.distanceY += this.speedY;
         // 边界控制
-        if (this.distanceX > innerWidth - 150) this.distanceX = innerWidth - 150
-        if (this.distanceX < 0) this.distanceX = 0
-        if (this.distanceY > innerHeight - 120) this.distanceY = innerHeight - 120
-        if (this.distanceY < 0) this.distanceY = 0
+        if (this.distanceX > innerWidth - 150) this.distanceX = innerWidth - 150;
+        if (this.distanceX < 0) this.distanceX = 0;
+        if (this.distanceY > innerHeight - 120) this.distanceY = innerHeight - 120;
+        if (this.distanceY < 0) this.distanceY = 0;
         if (this.step === 3) {
           this.step = -1
         }
         this.step++;
-        ;this.ctx.clearRect(0, 0, innerWidth, innerHeight);
+        this.ctx.clearRect(0, 0, innerWidth, innerHeight);
         this.ctx.drawImage(this.R.filter(item => item.name === 'tiger')[0].img, this.step * 600 / 4, this.dirction, 600 / 4, 480 / 4, this.distanceX, this.distanceY, 600 / 4, 480 / 4)
       }, 1000 / 20)
     }

@@ -9,10 +9,6 @@ class Pipe {
     this.distance = innerWidth;
     game.pipes.push(this);
 
-    game.PL = this.distance;
-    game.PR = this.distance + this.imagedown.width;
-    game.PT = this.upHeight;
-    game.PB = this.downHeight
   }
 
   render() {
@@ -21,16 +17,20 @@ class Pipe {
     game.ctx.drawImage(this.imageup, this.distance, -this.upHeightCut);
     game.ctx.drawImage(this.imagedown, this.distance, this.downHeight);
     game.ctx.restore();
+
     this.gameEnd()
   }
 
   gameEnd() {
-    console.log(game.BR > game.PL, game.BL < game.PR);
-    console.log(game.BT < game.PT, game.BB > game.PB);
-    if (game.BR > game.PR && game.BL < game.PR) {
-      if (game.BT < game.PT && game.BB > game.PB) {
-        alert(1)
+    game.PL = this.distance;
+    game.PR = this.distance + this.imagedown.width;
+    game.PT = this.upHeight;
+    game.PB = this.downHeight;
+
+    if (game.BR >= game.PL && game.BR <= game.PR) {
+      if (game.BT <= game.PT || game.BB >= game.PB) {
+
       }
     }
-  }
+  };
 }

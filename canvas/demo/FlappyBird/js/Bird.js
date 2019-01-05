@@ -8,10 +8,6 @@ class Bird {
     this.start = false;
     this.flyState = 0;
 
-    game.BL = this.x;
-    game.BR = this.x + this.img.width / 3;
-    game.BT = this.y;
-    game.BB = this.y + this.img.height
   }
 
   render() {
@@ -43,7 +39,6 @@ class Bird {
       this.y = innerHeight * 0.8 - 26;
       this.start = false
     }
-    console.log(this.y);
     game.ctx.save();
     // 将坐标系移到小鸟身上
     game.ctx.translate(this.x + 26, this.y + 22);
@@ -51,6 +46,11 @@ class Bird {
     // game.ctx.fillText(this.dropFps, -26, -22)
     game.ctx.drawImage(this.img, this.flyState * 52, 0, 52, 45, -26, -22, 52, 45);
     game.ctx.restore()
+
+    game.BL = this.x;
+    game.BR = this.x + this.img.width / 3 - 13;
+    game.BT = this.y;
+    game.BB = this.y + this.img.height
   }
 
 }

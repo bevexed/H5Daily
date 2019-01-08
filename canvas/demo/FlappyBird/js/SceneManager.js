@@ -26,18 +26,26 @@ class SceneManager {
 
   render() {
     this.bg.render();
-    this.bg.update();
-    this.bird.render();
     game.time++;
     switch (this.sceneNumber) {
       case 1:
+        this.bg.update();
+        this.land.update();
+        this.bird.render();
         game.ctx.drawImage(game.R.title, game.canvas.width / 2 - game.R.title.width / 2, this.titleHeight);
         game.ctx.drawImage(game.R.start, game.canvas.width / 2 - game.R.start.width / 2, this.startButton);
         break;
       case 2:
-        this.bird.update()
+        game.ctx.fillStyle = '#fff'
+        game.ctx.fillText(game.point, 10, 20);
+        this.bg.update();
+        this.land.update();
+        this.bird.render();
+        this.bird.update();
         game.pipes.forEach((item, index, arr) => {
           item.render();
+          item.update();
+          item.gameEnd();
           if (arr.length > 5) {
             arr.splice(0, 2)
           }
@@ -47,7 +55,20 @@ class SceneManager {
           new Pipe()
         }
 
+
         break;
+      case 3:
+        this.bird.render();
+        game.pipes.forEach((item, index, arr) => {
+          item.render();
+          if (arr.length > 5) {
+            arr.splice(0, 2)
+          }
+        });
+        if (this.bird.y < innerHeight * 0.8) {
+          this.bird.y *= 1.1
+          if (this.bird.y > innerHeight * 0.8 - this.bird.img.height) this.bird.y = innerHeight * 0.8 - this.bird.img.height
+        }
     }
     this.land.render();
   }

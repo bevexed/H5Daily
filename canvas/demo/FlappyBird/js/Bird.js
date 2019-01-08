@@ -12,10 +12,6 @@ class Bird {
 
   render() {
     game.ctx.save();
-    if (game.time % 10 === 0) {
-      this.flyState++;
-      this.flyState = this.flyState % 3
-    }
     // 将坐标系移到小鸟身上
     game.ctx.translate(this.x + 26, this.y + 22);
     game.ctx.rotate(this.rotate);
@@ -25,6 +21,10 @@ class Bird {
   }
 
   update() {
+    if (game.time % 10 === 0) {
+      this.flyState++;
+      this.flyState = this.flyState % 3
+    }
     game.canvas.onclick = () => {
       this.rotate = -0.2;
       this.dropFps = 0;

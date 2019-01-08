@@ -35,6 +35,7 @@ class SceneManager {
         game.ctx.drawImage(game.R.title, game.canvas.width / 2 - game.R.title.width / 2, this.titleHeight);
         game.ctx.drawImage(game.R.start, game.canvas.width / 2 - game.R.start.width / 2, this.startButton);
         break;
+
       case 2:
         game.ctx.fillStyle = '#fff'
         game.ctx.fillText(game.point, 10, 20);
@@ -54,9 +55,8 @@ class SceneManager {
         if (game.time % 200 === 0) {
           new Pipe()
         }
-
-
         break;
+
       case 3:
         this.bird.render();
         game.pipes.forEach((item, index, arr) => {
@@ -65,10 +65,12 @@ class SceneManager {
             arr.splice(0, 2)
           }
         });
-        if (this.bird.y < innerHeight * 0.8) {
-          this.bird.y *= 1.1
-          if (this.bird.y > innerHeight * 0.8 - this.bird.img.height) this.bird.y = innerHeight * 0.8 - this.bird.img.height
-        }
+        game.ctx.drawImage(game.R.gameover, game.canvas.width / 2 - game.R.gameover.width / 2, innerHeight * 0.3)
+        game.ctx.drawImage(game.R.start, game.canvas.width / 2 - game.R.start.width / 2, innerHeight * 0.4);
+        break;
+
+      case 4:
+        break;
     }
     this.land.render();
   }
@@ -77,6 +79,13 @@ class SceneManager {
     this.sceneNumber = sceneNumber;
     switch (sceneNumber) {
       case 1:
+        this.bird.x = (1 - 0.57) * innerWidth;
+        this.bird.y = (1 - 0.618) * innerHeight;
+        this.bird.rotate = 0;
+        this.bird.dropFps = 0;
+        this.bird.start = false;
+        this.bird.flyState = 0;
+        game.pipes = []
         this.titleHeight = -48;
         this.startButton = innerHeight
         break;
@@ -93,9 +102,23 @@ class SceneManager {
         case 1:
           if (mouseX > game.canvas.width / 2 - game.R.start.width / 2 && mouseX < game.canvas.width / 2 + game.R.start.width / 2) {
             if (mouseY > this.startButton && mouseY < this.startButton + game.R.start.height) {
-              this.sceneNumber = 2
+              this.enter(2)
             }
           }
+          break;
+        case 2:
+          this.bird.rotate = -0.2;
+          this.bird.dropFps = 0;
+          this.bird.y -= 1.3 * (25 - this.bird.dropFps);
+          this.bird.start = true
+          break;
+        case 3:
+          if (mouseX > game.canvas.width / 2 - game.R.start.width / 2 && mouseX < game.canvas.width / 2 + game.R.start.width / 2) {
+            if (mouseY > 0.4 * innerHeight && mouseY < 0.4 * innerHeight + game.R.start.height) {
+              this.enter(1)
+            }
+          }
+          break;
       }
     }
   }

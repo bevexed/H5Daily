@@ -25,12 +25,6 @@ class Bird {
       this.flyState++;
       this.flyState = this.flyState % 3
     }
-    game.canvas.onclick = () => {
-      this.rotate = -0.2;
-      this.dropFps = 0;
-      this.y -= 1.3 * (25 - this.dropFps);
-      this.start = true
-    };
 
     if (this.start) {
       this.dropFps += 0.8;

@@ -27,6 +27,10 @@
     {
       "name": "title",
       "url": "./img/title.png"
+    },
+    {
+      "name": "gameover",
+      "url": "./img/gameover.png"
     }
   ]
 }

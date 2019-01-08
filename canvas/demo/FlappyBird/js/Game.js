@@ -60,12 +60,12 @@ class Game {
 
   // 开始游戏
   start() {
-    this.sceneManager = new SceneManager()
+    this.sceneManager = new SceneManager();
     this.sceneManager.enter(1);
 
     setInterval(() => {
       this.ctx.clearRect(0, 0, innerWidth, innerHeight);
-      this.sceneManager.render()
+      this.sceneManager.render();
       this.sceneManager.update()
       //
       // this.land.render();

@@ -8,7 +8,7 @@ class SceneManager {
     this.startButton = innerHeight;
 
     this.bg = new Bg();
-    this.land = new Land()
+    this.land = new Land();
     this.bird = new Bird();
     this.bindEvent()
   }
@@ -38,7 +38,7 @@ class SceneManager {
         break;
 
       case 2:
-        game.ctx.fillStyle = '#fff'
+        game.ctx.fillStyle = '#fff';
         game.ctx.fillText(game.point, 10, 20);
         this.bg.update();
         this.land.update();
@@ -67,7 +67,7 @@ class SceneManager {
             arr.splice(0, 2)
           }
         });
-        game.ctx.drawImage(game.R.gameover, game.canvas.width / 2 - game.R.gameover.width / 2, innerHeight * 0.3)
+        game.ctx.drawImage(game.R.gameover, game.canvas.width / 2 - game.R.gameover.width / 2, innerHeight * 0.3);
         game.ctx.drawImage(game.R.start, game.canvas.width / 2 - game.R.start.width / 2, innerHeight * 0.4);
         break;
 
@@ -81,15 +81,10 @@ class SceneManager {
     this.sceneNumber = sceneNumber;
     switch (sceneNumber) {
       case 1:
-        this.bird.x = (1 - 0.57) * innerWidth;
-        this.bird.y = (1 - 0.618) * innerHeight;
-        this.bird.rotate = 0;
-        this.bird.dropFps = 0;
-        this.bird.start = false;
-        this.bird.flyState = 0;
-        game.pipes = []
+        this.bird = new Bird()
+        game.pipes = [];
         this.titleHeight = -48;
-        this.startButton = innerHeight
+        this.startButton = innerHeight;
         break;
       case 2:
         break;
@@ -98,8 +93,8 @@ class SceneManager {
 
   bindEvent() {
     game.canvas.onclick = event => {
-      let mouseX = event.clientX
-      let mouseY = event.clientY
+      let mouseX = event.clientX;
+      let mouseY = event.clientY;
       switch (this.sceneNumber) {
         case 1:
           if (mouseX > game.canvas.width / 2 - game.R.start.width / 2 && mouseX < game.canvas.width / 2 + game.R.start.width / 2) {
@@ -112,7 +107,7 @@ class SceneManager {
           this.bird.rotate = -0.2;
           this.bird.dropFps = 0;
           this.bird.y -= 1.3 * (25 - this.bird.dropFps);
-          this.bird.start = true
+          this.bird.start = true;
           break;
         case 3:
           if (mouseX > game.canvas.width / 2 - game.R.start.width / 2 && mouseX < game.canvas.width / 2 + game.R.start.width / 2) {

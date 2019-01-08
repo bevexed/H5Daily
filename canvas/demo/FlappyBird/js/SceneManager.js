@@ -32,6 +32,7 @@ class SceneManager {
         this.bg.update();
         this.land.update();
         this.bird.render();
+        this.bird.swing();
         game.ctx.drawImage(game.R.title, game.canvas.width / 2 - game.R.title.width / 2, this.titleHeight);
         game.ctx.drawImage(game.R.start, game.canvas.width / 2 - game.R.start.width / 2, this.startButton);
         break;
@@ -42,6 +43,7 @@ class SceneManager {
         this.bg.update();
         this.land.update();
         this.bird.render();
+        this.bird.swing();
         this.bird.update();
         game.pipes.forEach((item, index, arr) => {
           item.render();

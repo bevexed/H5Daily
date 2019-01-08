@@ -20,12 +20,14 @@ class Bird {
     game.ctx.restore()
   }
 
-  update() {
+  swing(){
     if (game.time % 10 === 0) {
       this.flyState++;
       this.flyState = this.flyState % 3
     }
+  }
 
+  update() {
     if (this.start) {
       this.dropFps += 0.8;
       this.rotate += 0.02;

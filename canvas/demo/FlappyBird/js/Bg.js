@@ -12,11 +12,15 @@ class Bg {
     game.ctx.fillStyle = 'rgb(94,226,112)';
     game.ctx.fillRect(0, innerHeight * .5, innerWidth, innerHeight);
 
-    this.distance -= 2;
+
     if (this.distance < -2 * this.image.width) this.distance = 0;
     game.ctx.drawImage(this.image, this.distance, (innerHeight - this.image.height) * 0.9);
     game.ctx.drawImage(this.image, this.distance + this.image.width, (innerHeight - this.image.height) * 0.9);
     game.ctx.drawImage(this.image, this.distance + this.image.width * 2, (innerHeight - this.image.height) * 0.9);
     game.ctx.restore()
+  }
+
+  update(){
+    this.distance -= 2;
   }
 }

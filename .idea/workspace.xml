@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d285846-2fab-4ea6-9a94-91bb4747a319" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bird.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/img/start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/img/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/SceneManager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas-像素处理.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas-像素处理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas-原地旋转.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas-原地旋转.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas-图形组合.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas-图形组合.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas-图片.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas-图片.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas-图片填充方式.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas-图片填充方式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas-坐标变换.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas-坐标变换.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas-文字.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas-文字.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/CanvasPrictice.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/CanvasPrictice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas_Path2D.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas_Path2D.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/Canvas—线性渐变.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/Canvas—线性渐变.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/canvas-基础使用.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/canvas-基础使用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/canvas-裁剪.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/canvas-裁剪.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/demo/FlappyBird/img/sky.png" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/img/sky.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas/demo/FlappyBird/Resource.json" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/Resource.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canvas/demo/FlappyBird/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bird.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Land.js" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Land.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Pipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Pipe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/demo/colorfull-ball.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/colorfull-ball.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/demo/run/Resource.json" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/run/Resource.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/demo/run/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/run/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas/demo/游戏起步框架/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/canvas/demo/游戏起步框架/js/Game.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,26 +23,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3962264">
+    <splitter split-orientation="horizontal" split-proportion="0.466759">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/canvas/Canvas-line.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-                  <folding>
-                    <element signature="e#417#1030#0" />
-                  </folding>
+                <state relative-caret-position="585">
+                  <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -64,8 +38,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/Resource.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="4" column="23" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="23" />
+                <state relative-caret-position="644">
+                  <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -74,11 +48,23 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Game.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1909">
-                  <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+                <state relative-caret-position="598">
+                  <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+                  <folding>
+                    <element signature="n#!!block;n#loadAllResource#0;n#Game#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/SceneManager.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="535">
+                  <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -86,8 +72,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bird.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+                <state relative-caret-position="322">
+                  <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -95,8 +81,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bg.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+                <state relative-caret-position="529">
+                  <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -113,8 +99,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Pipe.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="25" selection-start-line="25" selection-end-line="25" />
+                <state relative-caret-position="506">
+                  <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -180,16 +166,17 @@
         <option value="$PROJECT_DIR$/canvas/README.md" />
         <option value="$PROJECT_DIR$/canvas/demo/资源管理器/index.html" />
         <option value="$PROJECT_DIR$/canvas/demo/run/Resource.json" />
-        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/Resource.json" />
         <option value="$PROJECT_DIR$/canvas/demo/run/index.html" />
         <option value="$PROJECT_DIR$/canvas/Canvas-原地旋转.html" />
-        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Pipe.js" />
         <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Land.js" />
-        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bg.js" />
-        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bird.js" />
-        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Game.js" />
-        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/index.html" />
         <option value="$PROJECT_DIR$/canvas/Canvas-line.html" />
+        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/index.html" />
+        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bg.js" />
+        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/Resource.json" />
+        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Pipe.js" />
+        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Game.js" />
+        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bird.js" />
+        <option value="$PROJECT_DIR$/canvas/demo/FlappyBird/js/SceneManager.js" />
       </list>
     </option>
   </component>
@@ -203,7 +190,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,17 +205,37 @@
             <path>
               <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
               <item name="h5_daily" type="462c0819:PsiDirectoryNode" />
-              <item name="HTML5 新增 元素 与 属性" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
               <item name="h5_daily" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="FlappyBird" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h5_daily" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="FlappyBird" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h5_daily" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h5_daily" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="FlappyBird" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,17 +248,17 @@
     <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/canvas/demo" />
-      <recent name="$PROJECT_DIR$/canvas/demo/FlappyBird" />
-      <recent name="$PROJECT_DIR$/canvas/demo/run/imgs" />
-      <recent name="$PROJECT_DIR$/HTML5" />
-      <recent name="$PROJECT_DIR$/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/canvas/demo/FlappyBird/img" />
       <recent name="$PROJECT_DIR$/canvas/demo/run/imgs" />
       <recent name="$PROJECT_DIR$/canvas/demo/run" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/canvas/demo/FlappyBird/img" />
+      <recent name="$PROJECT_DIR$/canvas/demo" />
+      <recent name="$PROJECT_DIR$/canvas/demo/FlappyBird" />
+      <recent name="$PROJECT_DIR$/canvas/demo/run/imgs" />
+      <recent name="$PROJECT_DIR$/HTML5" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -284,7 +290,8 @@
       <workItem from="1545889455480" duration="16213000" />
       <workItem from="1546049867847" duration="36553000" />
       <workItem from="1546418838445" duration="35807000" />
-      <workItem from="1546582175403" duration="12344000" />
+      <workItem from="1546582175403" duration="22159000" />
+      <workItem from="1546912576736" duration="8037000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1544583021657</created>
@@ -524,11 +531,25 @@
       <option name="project" value="LOCAL" />
       <updated>1546509593723</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="格式化代码">
+      <created>1546609080654</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1546609080654</updated>
+    </task>
+    <task id="LOCAL-00036" summary="碰撞检测">
+      <created>1546670398546</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1546670398546</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130716000" />
+    <option name="totallyTimeSpent" value="148568000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,8 +562,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15667075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16768666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -551,12 +573,13 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.16528067" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.16528067" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.499388" weight="0.32952183" />
       <window_info anchor="bottom" id="RNConsole" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.4106029" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.500612" side_tool="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.32952183" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -592,37 +615,11 @@
     <MESSAGE value="传递回调函数" />
     <MESSAGE value="flappy Bird init" />
     <MESSAGE value="原地旋转" />
-    <option name="LAST_COMMIT_MESSAGE" value="原地旋转" />
+    <MESSAGE value="格式化代码" />
+    <MESSAGE value="碰撞检测" />
+    <option name="LAST_COMMIT_MESSAGE" value="碰撞检测" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.postcssrc.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="46">
-            <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5结构/README.md" />
     <entry file="file://$PROJECT_DIR$/HTML5 新增 元素 与 属性/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -696,13 +693,6 @@
     <entry file="file://$PROJECT_DIR$/img/month.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/Canvas-图片填充方式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/canvas/Canvas-坐标变换.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -742,13 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/Canvas-图形组合.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -802,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/Canvas-原地旋转.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/canvas/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -828,20 +804,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/Resource.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/img/birds.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bg.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="69">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/Canvas-图片填充方式.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        <state relative-caret-position="391">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/Canvas-图形组合.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/Canvas-原地旋转.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/Canvas-line.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#417#1030#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -852,41 +857,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Pipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/img/start.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bird.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/img/title.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Game.js">
+    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/img/sort.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/Resource.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1909">
-          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+        <state relative-caret-position="644">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="585">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/Canvas-line.html">
+    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Pipe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="506">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
           <folding>
-            <element signature="e#417#1030#0" />
+            <element signature="n#!!block;n#loadAllResource#0;n#Game#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/Bird.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/demo/FlappyBird/js/SceneManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
         </state>
       </provider>
     </entry>

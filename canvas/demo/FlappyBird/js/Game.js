@@ -7,7 +7,8 @@ class Game {
     this.init();
     this.loadAllResource(this.start);
     this.pipes = [];
-    this.time = 0
+    this.time = 0;
+    this.point = 0;
   }
 
   // 设置画布的宽度和高度
@@ -59,28 +60,18 @@ class Game {
 
   // 开始游戏
   start() {
-    this.bg = new Bg();
-    this.land = new Land();
-    this.bird = new Bird();
+    this.sceneManager = new SceneManager()
+    this.sceneManager.enter(1);
+
     setInterval(() => {
-      this.time++;
       this.ctx.clearRect(0, 0, innerWidth, innerHeight);
-      this.bg.render();
+      this.sceneManager.render()
+      this.sceneManager.update()
+      //
+      // this.land.render();
+      //
+      // this.bird.render()
 
-      this.pipes.forEach((item, index, arr) => {
-        item.render();
-        if (arr.length > 5) {
-          arr.splice(0, 2)
-        }
-      });
-
-      if (this.time % 200 === 0) {
-        new Pipe()
-      }
-
-      this.land.render();
-
-      this.bird.render()
     }, 1000 / 60)
   }
 

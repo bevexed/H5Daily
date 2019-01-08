@@ -19,6 +19,14 @@
     {
       "name": "pipe2",
       "url": "./img/pipe2.png"
+    },
+    {
+      "name": "start",
+      "url": "./img/start.png"
+    },
+    {
+      "name": "title",
+      "url": "./img/title.png"
     }
   ]
 }
